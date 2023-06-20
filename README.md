@@ -1,4 +1,6 @@
-# User
+# DemoTz
+
+## User
 
 {
 "groups": {
@@ -20,7 +22,7 @@
 }
 }
 
-# Group
+## Group
 
 {
 "author": {
@@ -38,28 +40,28 @@
 }
 }
 
-# Usecases
+## Usecases
 
-## user usecase
+### user usecase
 
 const user = findUserById(params.id);
 
 const userGroups = findGroupsByQuery({ author: user.id });
 
-## user groups from user usecase
+### user groups from user usecase
 
 const userGroups = findGroupsByQuery({ author: params.id });
 
-## user groups from groups usecase
+### user groups from groups usecase
 
 const userWithTheirGroups = findUserById(params.id, null, {
 populate: { path: "groups" },
 });
 
-## How it works
+### How it works
 
 ![alt text](https://github.com/tutanck/Tz23/blob/main/How_it_works.jpg)
 
-## Open FeedBack
+### Open FeedBack
 
 ![alt text](https://github.com/tutanck/Tz23/blob/main/Tz23QRCode.png)
