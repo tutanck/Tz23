@@ -50,19 +50,26 @@
 
 ### user usecase
 
+```Javascript
 const user = findUserById(params.id);
 
 const userGroups = findGroupsByQuery({ author: user.id });
 
+```
+
 ### user groups from user usecase
 
+```Javascript
 const userGroups = findGroupsByQuery({ author: params.id });
+```
 
 ### user groups from groups usecase
 
+```Javascript
 const userWithTheirGroups = findUserById(params.id, null, {
-populate: { path: "groups" },
+    populate: { path: "groups" },
 });
+```
 
 ### How it works
 
