@@ -2,6 +2,7 @@
 
 ## User
 
+```Javascript
 {
 "groups": {
 "ref": "Group",
@@ -21,9 +22,11 @@
 "type": "String"
 }
 }
+```
 
 ## Group
 
+```Javascript
 {
 "author": {
 "ref": "User",
@@ -39,6 +42,7 @@
 "type": "String"
 }
 }
+```
 
 ## Usecases
 
