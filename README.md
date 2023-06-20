@@ -66,7 +66,7 @@ const userGroups = findGroupsByQuery({ author: params.id });
 ### From populated user
 
 ```Javascript
-const userWithTheirGroups = findUserById(params.id, null, {
+const userWithItsGroups = findUserById(params.id, null, {
     populate: { path: "groups" },
 });
 ```
