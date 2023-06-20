@@ -56,9 +56,10 @@ const userWithTheirGroups = findUserById(params.id, null, {
 populate: { path: "groups" },
 });
 
-
 ## How it works
+
 ![alt text](https://github.com/tutanck/Tz23/blob/main/How_it_works.jpg)
 
 ## Open FeedBack
-![alt text](https://github.com/tutanck/ 💻 TechnoZaure Paris du 22 juin 2023🏢 QRCode.png)
+
+![alt text](https://github.com/tutanck/Tz23/blob/main/Tz23QRCode.png)
