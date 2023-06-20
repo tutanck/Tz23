@@ -48,7 +48,7 @@
 
 ## Usecase (get user's groups)
 
-### from user
+### From user
 
 ```Javascript
 const user = findUserById(params.id);
@@ -57,7 +57,7 @@ const userGroups = findGroupsByQuery({ author: user.id });
 
 ```
 
-### from params (user's id)
+### From params (user's id)
 
 ```Javascript
 const userGroups = findGroupsByQuery({ author: params.id });
