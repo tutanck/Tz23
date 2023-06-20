@@ -4,44 +4,46 @@
 
 ```Javascript
 {
-"groups": {
-"ref": "Group",
-"required": true,
-"type": "ObjectId"
-},
-"email": {
-"required": true,
-"type": "String",
-"unique": true
-},
-"password": {
-"required": true,
-"type": "String"
-},
-"username": {
-"type": "String"
+  "groups": {
+    "ref": "Group",
+    "required": true,
+    "type": "ObjectId"
+  },
+  "email": {
+    "required": true,
+    "type": "String",
+    "unique": true
+  },
+  "password": {
+    "required": true,
+    "type": "String"
+  },
+  "username": {
+    "type": "String"
+  }
 }
-}
+
 ```
 
 ## Group
 
 ```Javascript
 {
-"author": {
-"ref": "User",
-"required": true,
-"type": "ObjectId"
-},
-"title": {
-"required": true,
-"type": "String",
-"unique": true
-},
-"about": {
-"type": "String"
+  "author": {
+    "ref": "User",
+    "required": true,
+    "type": "ObjectId"
+  },
+  "title": {
+    "required": true,
+    "type": "String",
+    "unique": true
+  },
+  "about": {
+    "type": "String"
+  }
 }
-}
+
 ```
 
 ## Usecases
