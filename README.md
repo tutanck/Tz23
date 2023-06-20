@@ -55,3 +55,7 @@ const userGroups = findGroupsByQuery({ author: params.id });
 const userWithTheirGroups = findUserById(params.id, null, {
 populate: { path: "groups" },
 });
+
+
+## How it works
+![alt text](https://github.com/tutanck/Tz23/blob/main/How_it_works.jpg)
