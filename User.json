@@ -1,0 +1,19 @@
+{
+  "groups": {
+    "ref": "Group",
+    "required": true,
+    "type": "ObjectId"
+  },
+  "email": {
+    "required": true,
+    "type": "String",
+    "unique": true
+  },
+  "password": {
+    "required": true,
+    "type": "String"
+  },
+  "username": {
+    "type": "String"
+  }
+}
