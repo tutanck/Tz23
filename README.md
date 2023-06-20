@@ -57,13 +57,13 @@ const userGroups = findGroupsByQuery({ author: user.id });
 
 ```
 
-### user groups from user
+### user groups from groups
 
 ```Javascript
 const userGroups = findGroupsByQuery({ author: params.id });
 ```
 
-### user groups from groups
+### user groups from user
 
 ```Javascript
 const userWithTheirGroups = findUserById(params.id, null, {
