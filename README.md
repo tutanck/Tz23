@@ -1,14 +1,18 @@
 # DemoTz
 
+## Smallcode (intro)?
+
 ## User
 
 ```Javascript
 {
-  "groups": {
-    "ref": "Group",
-    "required": true,
-    "type": "ObjectId"
-  },
+  "groups": [
+    {
+      "ref": "Group",
+      "required": true,
+      "type": "ObjectId"
+    }
+  ],
   "email": {
     "required": true,
     "type": "String",
@@ -22,7 +26,6 @@
     "type": "String"
   }
 }
-
 ```
 
 ## Group
@@ -43,24 +46,48 @@
     "type": "String"
   }
 }
-
 ```
 
-## Usecase (get user's groups)
+## Usecase: Create user
+
+```Javascript
+const user = createUser({
+    email: body.email,
+    password: body.pwd,
+    username: body.uname
+});
+```
+
+## Usecase: Add group to user
+
+```Javascript
+const user = findUserById(params.id);
+
+const group = createGroup({
+    author: user,
+    about: body.about,
+    title: body.title,
+});
+
+const updatedUser = updateUserById(user._id, {
+    $push: { groups: [group] }
+});
+```
+
+## Usecase: Get user's groups
+
+### From params (user's id)
+
+```Javascript
+const userGroups = findGroupsByQuery({ author: params.id });
+```
 
 ### From user
 
 ```Javascript
 const user = findUserById(params.id);
 
-const userGroups = findGroupsByQuery({ author: user.id });
-
-```
-
-### From params (user's id)
-
-```Javascript
-const userGroups = findGroupsByQuery({ author: params.id });
+const userGroups = findGroupsByQuery({ author: user._id });
 ```
 
 ### From populated user
