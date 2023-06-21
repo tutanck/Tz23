@@ -1,6 +1,6 @@
 # DemoTz
 
-## Smallcode (intro)
+## smallCode (intro)
 
 - What is smallCode in brief ?
 
