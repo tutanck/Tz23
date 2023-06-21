@@ -2,7 +2,9 @@
 
 ## Smallcode (intro)
 
-- Explain what is petitCode in brief
+- What is smallCode in brief
+
+## Demo
 
 ## User
 
