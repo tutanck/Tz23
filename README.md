@@ -39,8 +39,7 @@
   },
   "title": {
     "required": true,
-    "type": "String",
-    "unique": true
+    "type": "String"
   },
   "about": {
     "type": "String"
