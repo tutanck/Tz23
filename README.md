@@ -70,7 +70,7 @@ const group = createGroup({
 });
 
 const updatedUser = updateUserById(user._id, {
-    $push: { groups: [group] }
+    $push: { groups: group }
 });
 ```
 
