@@ -1,6 +1,8 @@
 # DemoTz
 
-## Smallcode (intro)?
+## Smallcode (intro)
+
+- Explain what is petitCode in brief
 
 ## User
 
