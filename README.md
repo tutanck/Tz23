@@ -2,7 +2,7 @@
 
 ## Smallcode (intro)
 
-- What is smallCode in brief
+- What is smallCode in brief ?
 
 ## Demo
 
